@@ -7,6 +7,11 @@ namespace PropMetCons.Model
 {
     public class Pessoa
     {
+
+        public Pessoa(String nome, string sobrenome){
+            Nome = nome;
+            Sobrenome = sobrenome;
+        }
         private String _nome;
         private int _idade;
         public String Nome
