@@ -27,9 +27,12 @@ namespace PropMetCons.Model
 
         public void ListarAlunos(){
             Console.WriteLine($"Os alunos do curso: {Nome}");
-            foreach(Pessoa aluno in Alunos){
-                
-                Console.WriteLine(aluno.NomeCompleto);
+            for (int count = 0; count < Alunos.Count; count++){
+                string Nomes;
+                // Nomes = "Nº "+(count+ 1)+" - "+Alunos[count].NomeCompleto;
+                Nomes = $"Nº {(count+1)} - {Alunos[count].NomeCompleto} ";
+                Console.WriteLine(Nomes);
+
             }
         }
     }
