@@ -1,4 +1,23 @@
-﻿using PropMetCons.Model;
+﻿// using PropMetCons.Model;
+
+String[] linhas = File.ReadAllLines("Arquivos/arquivoLeitura.txt");
+
+foreach (String linha in linhas)
+{
+    Console.WriteLine(linha);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Pessoa p1 = new Pessoa();
 // p1.Nome = "Vitor";
@@ -7,16 +26,16 @@
 
 // p1.Apresentar();
 
-Pessoa p1 = new Pessoa("Vitor", "Fernandes");
+// Pessoa p1 = new Pessoa("Vitor", "Fernandes");
 
 
-Pessoa p2 = new Pessoa("Paulo","Santos");
+// Pessoa p2 = new Pessoa("Paulo","Santos");
 
 
-Curso cursoDeArtes = new Curso();
-cursoDeArtes.Nome = "Artes";
-cursoDeArtes.Alunos = new List<Pessoa>();
+// Curso cursoDeArtes = new Curso();
+// cursoDeArtes.Nome = "Artes";
+// cursoDeArtes.Alunos = new List<Pessoa>();
 
-cursoDeArtes.AdicionarAlunos(p1);
-cursoDeArtes.AdicionarAlunos(p2);
-cursoDeArtes.ListarAlunos();
+// cursoDeArtes.AdicionarAlunos(p1);
+// cursoDeArtes.AdicionarAlunos(p2);
+// cursoDeArtes.ListarAlunos();
