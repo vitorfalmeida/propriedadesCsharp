@@ -1,13 +1,129 @@
 ﻿// using PropMetCons.Model;
 
-String[] linhas = File.ReadAllLines("Arquivos/arquivoLeitura.txt");
+Dictionary<string, string> estados = new Dictionary<string, string>();
 
-foreach (String linha in linhas)
-{
-    Console.WriteLine(linha);
-}
+estados.Add("BA", "Bahia");
+estados.Add("SP", "São Paulo");
+estados.Add("GO", "Goiás");
+
+// foreach (var item in estados)
+
+// {
+// Console.WriteLine($"\nChave: {item.Key} \nValor: {item.Value}:");
+// }
+
+// estados.Remove("BA");
+// estados["SP"] = "São Paulo - Alterado";
+
+string chave = "BA2";
+Console.WriteLine("Verificando Valor Existente");
+
+if(estados.ContainsKey(chave)) {Console.WriteLine($"Valor {chave} já exite");}
+else{   Console.WriteLine($"Valor {chave} ainda não existe");}
+ 
 
 
+
+
+
+
+
+
+
+
+
+
+
+// Stack<int> pilha = new Stack<int>();
+
+// void imprimePilha(){
+// foreach (var item in pilha)
+// {
+//     Console.WriteLine(item);
+// }
+// }
+
+
+
+// pilha.Push(2);
+// pilha.Push(26);
+// pilha.Push(8);
+// pilha.Push(15);
+// pilha.Push(13);
+// imprimePilha();
+
+
+// Console.WriteLine($"O ultimo elemento a ser removido {pilha.Pop()}");
+// pilha.Push(55);
+// imprimePilha();
+
+
+
+
+
+
+
+// Queue<int> fila = new Queue<int>();
+
+// fila.Enqueue(8);
+// fila.Enqueue(33);
+// fila.Enqueue(45);
+// fila.Enqueue(2);
+// fila.Enqueue(89);
+// fila.Enqueue(85);
+// int contador = 0;
+// foreach (var item in fila)
+
+// {
+    
+//     Console.WriteLine($"Posição na fila {contador} = {item}");   
+//     contador++; 
+// }
+
+// for(int i = 0; i <= fila.Count; i++){
+// Console.WriteLine($"O item na posição {i} foi removido =  " + fila.Dequeue());
+// }
+// foreach (var item in fila)
+
+// {
+//     Console.WriteLine(item);    
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// new ExemploExcecao().metodo1();
+
+
+
+
+
+
+
+// try
+// {
+//     String[] linhas = File.ReadAllLines("Arquivos/arquivoLeitura.txt");
+
+// foreach (String linha in linhas)
+// {
+//     Console.WriteLine(linha);
+// }
+
+// }catch(Exception ex){
+//     Console.WriteLine($"Ocorreu uma exceção genérica. {ex.Message}");
+// }
 
 
 
