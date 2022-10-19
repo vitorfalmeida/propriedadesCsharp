@@ -1,14 +1,36 @@
 ﻿
+using System.Globalization;
 using propriedadesCsharp.Model;
 using Newtonsoft.Json;
 
-Venda venda01 = new Venda(1, "material de escritorio", 25);
+String conteudoArquvo = File.ReadAllText("Arquivos/listaDeVendas.json");
+List<VendaDeserializada> listVenda = JsonConvert.DeserializeObject<List<VendaDeserializada>>(conteudoArquvo);
+foreach(VendaDeserializada venda in listVenda){
+    Console.WriteLine($"Id : {venda.Id}"
+    + $"\nProduto: {venda.Produto}"
+    + $"\nPreço: {venda.Preco}"
+    + $"\nData de Venda: {venda.DataVenda}\n"
+            );
 
-string serealizador = JsonConvert.SerializeObject(venda01, Formatting.Indented);
+}
 
-File.WriteAllText("Arquivos/vendas.json", serealizador);
 
-Console.WriteLine(serealizador);
+
+
+// List<Venda> listaVenda = new List<Venda>();
+// DateTime dataAtual = DateTime.Now;
+
+// Venda venda01 = new Venda(1, "material de escritorio", 25,dataAtual);
+// Venda venda02 = new Venda(2, "Software", 110,dataAtual);
+
+// listaVenda.Add(venda01);
+// listaVenda.Add(venda02);
+
+// string serealizador = JsonConvert.SerializeObject(listaVenda, Formatting.Indented);
+
+// File.WriteAllText("Arquivos/listaDeVendas.json", serealizador);
+
+// Console.WriteLine(serealizador);
 
 
 
