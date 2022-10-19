@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ldlpJA1h3gZLN8WNm0S5WhX1DyHho/ImwbObdbMa5ptB7xU+G/aXvBeLVny5oKZNypoS97SOC582j1VbwuqkXQ==",
+  "dgSpecHash": "pUxbepZy3mpAb4idXVR7xyYNqFS58kEa71zJ9ytAaogitdEXfGM9sQ5kXPLVxpTVvNBJUe60pFxDefJ47hgnjA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\vitor.almeida\\Desktop\\PropMetCons\\PropMetCons.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\vitor\\Desktop\\Vitor\\bootcamp\\.vs\\propriedadesCsharp\\PropMetCons.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vitor\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

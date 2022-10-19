@@ -1,10 +1,110 @@
-﻿// using PropMetCons.Model;
+﻿
+using propriedadesCsharp.Model;
+using Newtonsoft.Json;
 
-Dictionary<string, string> estados = new Dictionary<string, string>();
+Venda venda01 = new Venda(1, "material de escritorio", 25);
 
-estados.Add("BA", "Bahia");
-estados.Add("SP", "São Paulo");
-estados.Add("GO", "Goiás");
+string serealizador = JsonConvert.SerializeObject(venda01, Formatting.Indented);
+
+File.WriteAllText("Arquivos/vendas.json", serealizador);
+
+Console.WriteLine(serealizador);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// LeituraArquivo arquivo = new LeituraArquivo();
+
+// var (sucesso, linhas, QuantidadeDeLinhas) = arquivo.LerArquivos("Arquivos/arquivoLeitura.txt");
+
+// if (sucesso)
+// {
+//   Console.WriteLine("Quantidade de linhas do arquivo:" + QuantidadeDeLinhas);
+//   foreach (String linha in linhas)
+//   {
+//     Console.WriteLine(linha);
+//   }
+// }
+// else
+// {
+//   Console.WriteLine("Não foi possivel ler o arquivo");
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// (int id, string nome, string Sobrenome) tupla = (1,"vitor","fernandes");
+
+// Console.WriteLine(tupla);
+// Console.WriteLine($"ID: {tupla.id}");
+// Console.WriteLine($"Nome: {tupla.nome}");
+// Console.WriteLine($"Sobrenome: {tupla.Sobrenome}");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Dictionary<string, string> estados = new Dictionary<string, string>();
+
+// estados.Add("BA", "Bahia");
+// estados.Add("SP", "São Paulo");
+// estados.Add("GO", "Goiás");
 
 // foreach (var item in estados)
 
@@ -15,12 +115,12 @@ estados.Add("GO", "Goiás");
 // estados.Remove("BA");
 // estados["SP"] = "São Paulo - Alterado";
 
-string chave = "BA2";
-Console.WriteLine("Verificando Valor Existente");
+// string chave = "BA2";
+// Console.WriteLine("Verificando Valor Existente");
 
-if(estados.ContainsKey(chave)) {Console.WriteLine($"Valor {chave} já exite");}
-else{   Console.WriteLine($"Valor {chave} ainda não existe");}
- 
+// if(estados.ContainsKey(chave)) {Console.WriteLine($"Valor {chave} já exite");}
+// else{   Console.WriteLine($"Valor {chave} ainda não existe");}
+
 
 
 
@@ -75,7 +175,7 @@ else{   Console.WriteLine($"Valor {chave} ainda não existe");}
 // foreach (var item in fila)
 
 // {
-    
+
 //     Console.WriteLine($"Posição na fila {contador} = {item}");   
 //     contador++; 
 // }

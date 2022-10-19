@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vitor.almeida\\Desktop\\PropMetCons\\PropMetCons.csproj": {}
+    "C:\\Users\\vitor\\Desktop\\Vitor\\bootcamp\\.vs\\propriedadesCsharp\\PropMetCons.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vitor.almeida\\Desktop\\PropMetCons\\PropMetCons.csproj": {
+    "C:\\Users\\vitor\\Desktop\\Vitor\\bootcamp\\.vs\\propriedadesCsharp\\PropMetCons.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vitor.almeida\\Desktop\\PropMetCons\\PropMetCons.csproj",
+        "projectUniqueName": "C:\\Users\\vitor\\Desktop\\Vitor\\bootcamp\\.vs\\propriedadesCsharp\\PropMetCons.csproj",
         "projectName": "PropMetCons",
-        "projectPath": "C:\\Users\\vitor.almeida\\Desktop\\PropMetCons\\PropMetCons.csproj",
-        "packagesPath": "C:\\Users\\vitor.almeida\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vitor.almeida\\Desktop\\PropMetCons\\obj\\",
+        "projectPath": "C:\\Users\\vitor\\Desktop\\Vitor\\bootcamp\\.vs\\propriedadesCsharp\\PropMetCons.csproj",
+        "packagesPath": "C:\\Users\\vitor\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vitor\\Desktop\\Vitor\\bootcamp\\.vs\\propriedadesCsharp\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\vitor.almeida\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vitor\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -42,6 +39,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
